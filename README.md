@@ -13,10 +13,12 @@ Figure: Training Results
 
 Mean average precision evaluates the performance of object detection tasks derived from precision-recall curves. This figure shows MAP values under different intersection-over-unions (50% and 75%) and mean values from IOU from 50% to 95%. I also calculated IoU for individual classes. The results indicate that my algorithm has a good prediction for rooms, windows, and doors.
 ![Model](figs/MAP_Results.png)
+Figure: Mean Average Precision (MAP) Results 
 
 ### Non-Maximum Suppression ###
  Non-maximum suppression ranks bounding boxes according to their confidence scores, selects the bounding box with the highest confidence scores and removes all other bounding boxes that have overlaps with the selected bounding box. Non-maximum can prevent false positives in object detection. I found that the overlaps happened in my coding task, so I applied non-maximum suppression to reduce bounding boxes and make the results clearer. This figure shows an example of bounding overlaps, especially in blue boxes, and their impacts on detection results.
 ![Model](figs/Non-maxmium_Suppression.png)
+Figure: Non-maximum Suppression (NMS) Results (The Predicted Figure Is Before NMS, And The Filtered Is After NMS)
 
 ### An Example of Processed Floors ###
 There are some examples of detection results. Rooms, windows and doors are precisely detected and marked in different colours. The figures show targeted, predicted and filtered floorplans.
