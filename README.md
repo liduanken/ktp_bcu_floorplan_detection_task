@@ -8,7 +8,7 @@ Figure: Fast RCNN with ResNet50 as a Backbone
 
 ### Training Results and Evulation Metrics and Results ####
 I selected an SGD optimiser with a batch size of 16, a learning rate of 0.01, and a momentum of 0.9. The learning rate is reduced by half after each epoch. The loss function is classification loss and objectness loss. This plot shows the training learning curve over batch iterations and epochs. The plot indicates that both training and validation losses decreased over training epochs, and no overfitting occurred during the training.
-![Model](figs/Tralning_Results.png)
+![Model](figs/TraIning_Results.png)
 Figure: Training Results
 
 Mean average precision evaluates the performance of object detection tasks derived from precision-recall curves. This figure shows MAP values under different intersection-over-unions (50% and 75%) and mean values from IOU from 50% to 95%. I also calculated IoU for individual classes. The results indicate that my algorithm has a good prediction for rooms, windows, and doors.
